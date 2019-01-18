@@ -1,5 +1,5 @@
 require 'rspec/core/rake_task'
-require 'YAML'
+require 'yaml'
 
 ENV['PARALLEL_SPLIT_TEST_PROCESSES'] = ENV['PARALLEL_SPLIT_TEST_PROCESSES'] || '10'
 
