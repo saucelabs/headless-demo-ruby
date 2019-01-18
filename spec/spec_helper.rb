@@ -29,9 +29,9 @@ RSpec.configure do |config|
   config.before(:each) do |test|
     opt = {name: test.full_description,
            build: build_name,
-           url: "https://ondemand.saucelabs.com:443/wd/hub",
-           username: ENV['SAUCE_USERNAME'],
-           accessKey: ENV['SAUCE_ACCESS_KEY']}
+           url: "http://ondemand.us-east1.headless.saucelabs.com/wd/hub",
+           username: 'sah',
+           accessKey: ENV['SAUCE_ADMIN_KEY']}
 
     opt.merge! platform
 
@@ -39,8 +39,6 @@ RSpec.configure do |config|
   end
 
   config.after(:each) do |example|
-    SauceWhisk::Jobs.change_status(@browser.wd.session_id, !example.exception)
-
     @browser.quit
   end
 end

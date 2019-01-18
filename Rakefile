@@ -1,9 +1,14 @@
 require 'rspec/core/rake_task'
+require 'YAML'
 
-ENV['PARALLEL_SPLIT_TEST_PROCESSES'] = '10'
+ENV['PARALLEL_SPLIT_TEST_PROCESSES'] = ENV['PARALLEL_SPLIT_TEST_PROCESSES'] || '10'
+
+def platforms
+  YAML.safe_load(IO.read('spec/platforms.yml'))
+end
 
 # TODO - add in windows_8_ie once Sample App is fixed
-PLATFORMS = %w[windows_10_edge mac_sierra_chrome windows_7_ff]
+PLATFORMS = platforms.keys
 
 PLATFORMS.each do |platform|
   desc "Run tests in parallel within suite using #{platform}"
