@@ -1,8 +1,6 @@
 require 'rspec/core/rake_task'
 require 'yaml'
 
-ENV['PARALLEL_SPLIT_TEST_PROCESSES'] = ENV['PARALLEL_SPLIT_TEST_PROCESSES'] || '10'
-
 def platforms
   YAML.safe_load(IO.read('spec/platforms.yml'))
 end
@@ -14,7 +12,7 @@ PLATFORMS.each do |platform|
   desc "Run tests in parallel within suite using #{platform}"
   task platform do
     ENV['PLATFORM'] = platform
-    system 'parallel_split_test spec'
+    system 'parallel_rspec --serialize-stdout  spec/|grep -B2 Took.*seconds'
   end
 end
 
@@ -33,7 +31,7 @@ PLATFORMS.each do |platform|
   task "#{platform}_demo" do
     ENV['PLATFORM'] = platform
     begin
-      @result = system 'parallel_split_test spec'
+      @result = system 'parallel_rspec --serialize-stdout  spec/|grep -B2 Took.*seconds'
     ensure
       @success &= @result
     end
