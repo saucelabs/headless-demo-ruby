@@ -12,7 +12,7 @@ PLATFORMS.each do |platform|
   desc "Run tests in parallel within suite using #{platform}"
   task platform do
     ENV['PLATFORM'] = platform
-    system 'parallel_rspec --serialize-stdout  spec/|grep -B2 Took.*seconds'
+    system 'parallel_rspec -n10 --serialize-stdout  spec/|grep -B2 Took.*seconds'
   end
 end
 
@@ -31,7 +31,7 @@ PLATFORMS.each do |platform|
   task "#{platform}_demo" do
     ENV['PLATFORM'] = platform
     begin
-      @result = system 'parallel_rspec --serialize-stdout  spec/|grep -B2 Took.*seconds'
+      @result = system 'parallel_rspec -n10 --serialize-stdout  spec/|grep -B2 Took.*seconds'
     ensure
       @success &= @result
     end
