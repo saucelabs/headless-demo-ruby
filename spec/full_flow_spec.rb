@@ -15,7 +15,9 @@ describe "FullFlow" do
     @browser.button(type: 'submit').click
 
     expect(@browser.url).to eq 'http://saucedemo.headless.saucelabs.com/inventory.html'
-
+  end
+  it 'adds stuff to the cart'
+    @browser.goto "http://saucedemo.headless.saucelabs.com/inventory.html"
     @browser.button(class: 'add-to-cart-button').click
     @browser.button(class: 'add-to-cart-button').click
 
@@ -24,21 +26,22 @@ describe "FullFlow" do
 
     @browser.goto "http://saucedemo.headless.saucelabs.com/cart.html"
     expect(@browser.divs(class: 'inventory_item_name').size).to eq 1
-    
+  end
+
+  it 'does stuff'
     @browser.goto "http://saucedemo.headless.saucelabs.com/inventory.html"
     @browser.button(class: 'add-to-cart-button').click
-
-    expect(@browser.span(class: 'shopping_cart_badge').text).to eq '2'
+    expect(@browser.span(class: 'shopping_cart_badge').text).to eq '1'
     @browser.goto "http://saucedemo.headless.saucelabs.com/cart.html"
-    expect(@browser.divs(class: 'inventory_item_name').size).to eq 2
+    expect(@browser.divs(class: 'inventory_item_name').size).to eq 1
 
     @browser.goto "http://saucedemo.headless.saucelabs.com/inventory.html"
     @browser.button(class: 'add-to-cart-button').click
     @browser.button(class: 'add-to-cart-button').click
 
-    expect(@browser.span(class: 'shopping_cart_badge').text).to eq '4'
+    expect(@browser.span(class: 'shopping_cart_badge').text).to eq '3'
     @browser.goto "http://saucedemo.headless.saucelabs.com/cart.html"
-    expect(@browser.divs(class: 'inventory_item_name').size).to eq 4
+    expect(@browser.divs(class: 'inventory_item_name').size).to eq 3
   end
   
 end
