@@ -9,15 +9,16 @@ describe "Inventory" do
     expect(@browser.divs(class: 'inventory_item_name').size).to eq 1
   end
 
-  it 'does more' do
+  it 'adds and removes' do
     @browser.goto "http://saucedemo.headless.saucelabs.com/inventory.html"
     @browser.button(class: 'add-to-cart-button').click
     @browser.button(class: 'add-to-cart-button').click
     @browser.button(class: 'add-to-cart-button').click
+    @browser.button(class: 'remove-from-cart-button').click
 
-    expect(@browser.span(class: 'shopping_cart_badge').text).to eq '3'
+    expect(@browser.span(class: 'shopping_cart_badge').text).to eq '2'
     @browser.goto "http://saucedemo.headless.saucelabs.com/cart.html"
-    expect(@browser.divs(class: 'inventory_item_name').size).to eq 3
+    expect(@browser.divs(class: 'inventory_item_name').size).to eq 2
   end
   
 end
