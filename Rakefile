@@ -2,7 +2,8 @@ require 'rspec/core/rake_task'
 require 'yaml'
 
 def platforms
-  YAML.safe_load(IO.read('spec/platforms.yml'))
+  platforms_file = "platforms-#{ENV['PLATFORM']}"
+  YAML.safe_load(IO.read("spec/#{platforms_file}.yml"))
 end
 
 # TODO - add in windows_8_ie once Sample App is fixed

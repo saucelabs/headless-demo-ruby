@@ -1,0 +1,48 @@
+chrome70_windows:
+  platform: Windows
+  browser_name: chrome
+  version: '70'
+chrome71_windows:
+  platform: Windows
+  browser_name: chrome
+  version: '71'
+firefox63_windows:
+  platform: Windows
+  browser_name: firefox
+  version: '63.0'
+firefox64_windows:
+  platform: Windows
+  browser_name: firefox
+  version: '64.0'
+chrome70_windows1:
+  platform: Windows
+  browser_name: chrome
+  version: '70'
+chrome71_windows1:
+  platform: Windows
+  browser_name: chrome
+  version: '71'
+firefox63_windows1:
+  platform: Windows
+  browser_name: firefox
+  version: '63.0'
+firefox64_windows1:
+  platform: Windows
+  browser_name: firefox
+  version: '64.0'
+chrome70_windows2:
+  platform: Windows
+  browser_name: chrome
+  version: '70'
+chrome71_windows2:
+  platform: Windows
+  browser_name: chrome
+  version: '71'
+firefox63_windows2:
+  platform: Windows
+  browser_name: firefox
+  version: '63.0'
+firefox64_windows2:
+  platform: Windows
+  browser_name: firefox
+  version: '64.0'
