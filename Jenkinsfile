@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'bundle exec rake sauce_demo'
+        sh 'bundle exec rake -j12 sauce_demo'
       }
     }
   }
