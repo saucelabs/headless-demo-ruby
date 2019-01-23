@@ -1,7 +1,7 @@
 pipeline {
   stages {
-    steps {
-      stage('Build') {
+    stage('Build') {
+      steps {
         script {
           if (env.BRANCH_NAME == 'master' || env.BRANCH_NAME == 'sauce_prod') {
             withCredentials([usernamePassword(credentialsId: 'sauce-prod-key', passwordVariable: 'SAUCE_KEY', usernameVariable: 'SAUCE_USERNAME')]) {
