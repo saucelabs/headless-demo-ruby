@@ -29,9 +29,9 @@ RSpec.configure do |config|
   config.before(:each) do |test|
     opt = {name: test.full_description,
            build: build_name,
-           url: "http://ondemand.us-east1.headless.saucelabs.com/wd/hub",
-           username: 'sah',
-           accessKey: ENV['SAUCE_ADMIN_KEY']}
+           url: ENV['SAUCE_URL'],
+           username: ENV['SAUCE_USERNAME'],
+           accessKey: ENV['SAUCE_KEY']}
 
     opt.merge! platform
 
