@@ -16,7 +16,7 @@ describe "FullFlow" do
 
     expect(@browser.url).to eq 'http://saucedemo.headless.saucelabs.com/inventory.html'
   end
-  it 'adds stuff to the cart'
+  it 'adds stuff to the cart' do
     @browser.goto "http://saucedemo.headless.saucelabs.com/inventory.html"
     @browser.button(class: 'add-to-cart-button').click
     @browser.button(class: 'add-to-cart-button').click
@@ -28,7 +28,7 @@ describe "FullFlow" do
     expect(@browser.divs(class: 'inventory_item_name').size).to eq 1
   end
 
-  it 'does stuff'
+  it 'does stuff' do
     @browser.goto "http://saucedemo.headless.saucelabs.com/inventory.html"
     @browser.button(class: 'add-to-cart-button').click
     expect(@browser.span(class: 'shopping_cart_badge').text).to eq '1'
