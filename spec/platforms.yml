@@ -6,14 +6,6 @@ chrome70_headless:
   platform: Linux
   browser_name: chrome
   version: '70'
-firefox63_headless:
-  platform: Linux
-  browser_name: firefox
-  version: '63.0'
-firefox64_headless:
-  platform: Linux
-  browser_name: firefox
-  version: '64.0'
 chrome70_headless1:
   platform: Linux
   browser_name: chrome
@@ -22,14 +14,6 @@ chrome71_headless1:
   platform: Linux
   browser_name: chrome
   version: '71'
-firefox63_headless1:
-  platform: Linux
-  browser_name: firefox
-  version: '63.0'
-firefox64_headless1:
-  platform: Linux
-  browser_name: firefox
-  version: '64.0'
 chrome70_headless2:
   platform: Linux
   browser_name: chrome
@@ -38,11 +22,3 @@ chrome71_headless2:
   platform: Linux
   browser_name: chrome
   version: '71'
-firefox63_headless2:
-  platform: Linux
-  browser_name: firefox
-  version: '63.0'
-firefox64_headless2:
-  platform: Linux
-  browser_name: firefox
-  version: '64.0'
