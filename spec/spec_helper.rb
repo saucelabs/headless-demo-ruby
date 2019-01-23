@@ -3,7 +3,7 @@ require 'sauce_whisk'
 
 RSpec.configure do |config|
   def platforms
-    platforms_file = "platforms-#{ENV['PLATFORM']}"
+    platforms_file = "platforms-#{ENV['PLATFORM_FILE']}"
     YAML.safe_load(IO.read("spec/#{platforms_file}.yml"))
   end
 

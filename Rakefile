@@ -2,7 +2,7 @@ require 'rspec/core/rake_task'
 require 'yaml'
 
 def platforms
-  platforms_file = "platforms-#{ENV['PLATFORM']}"
+  platforms_file = "platforms-#{ENV['PLATFORM_FILE']}"
   YAML.safe_load(IO.read("spec/#{platforms_file}.yml"))
 end
 
