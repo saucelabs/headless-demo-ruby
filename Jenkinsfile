@@ -1,7 +1,7 @@
 pipeline {
+  agent { node 'master' }
   stages {
     stage('Build') {
-      agent { node 'master' }
       steps {
         script {
           if (env.BRANCH_NAME == 'master' || env.BRANCH_NAME == 'sauce_prod') {
