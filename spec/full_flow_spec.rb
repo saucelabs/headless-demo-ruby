@@ -13,7 +13,7 @@ describe "FullFlow" do
     @browser.text_field(data_test: 'password').set 'secret_sauce'
     @browser.button(type: 'submit').click
 
-    expect(@browser.url).to eq 'http://saucedemo.headless.saucelabs.com/inventory.htm'
+    expect(@browser.url).to eq 'http://saucedemo.headless.saucelabs.com/inventory.html'
   end
   it 'adds stuff to the cart' do
     @browser.goto "http://saucedemo.headless.saucelabs.com/inventory.html"
