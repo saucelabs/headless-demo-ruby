@@ -10,10 +10,10 @@ describe "FullFlow" do
     expect(@browser.button(class: 'error-button')).to exist
 
   	@browser.text_field(data_test: 'username').set 'standard_user'
-    @browser.text_field(data_test: 'password').set 'secret_sauce'
+    @browser.text_field(data_test: 'password').set 'secret_sauc'
     @browser.button(type: 'submit').click
 
-    expect(@browser.url).to eq 'http://saucedemo.headless.saucelabs.com/inventory.htm'
+    expect(@browser.url).to eq 'http://saucedemo.headless.saucelabs.com/inventory.html'
   end
   it 'adds stuff to the cart' do
     @browser.goto "http://saucedemo.headless.saucelabs.com/inventory.html"
