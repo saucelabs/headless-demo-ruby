@@ -70,11 +70,3 @@ chrome71_windows4:
   platform: Windows
   browser_name: chrome
   version: '71'
-firefox63_windows4:
-  platform: Windows
-  browser_name: firefox
-  version: '63.0'
-firefox64_windows4:
-  platform: Windows
-  browser_name: firefox
-  version: '64.0'
