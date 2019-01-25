@@ -46,3 +46,35 @@ firefox64_windows2:
   platform: Windows
   browser_name: firefox
   version: '64.0'
+chrome70_windows3:
+  platform: Windows
+  browser_name: chrome
+  version: '70'
+chrome71_windows3:
+  platform: Windows
+  browser_name: chrome
+  version: '71'
+firefox63_windows3:
+  platform: Windows
+  browser_name: firefox
+  version: '63.0'
+firefox64_windows3:
+  platform: Windows
+  browser_name: firefox
+  version: '64.0'
+chrome70_windows4:
+  platform: Windows
+  browser_name: chrome
+  version: '70'
+chrome71_windows4:
+  platform: Windows
+  browser_name: chrome
+  version: '71'
+firefox63_windows4:
+  platform: Windows
+  browser_name: firefox
+  version: '63.0'
+firefox64_windows4:
+  platform: Windows
+  browser_name: firefox
+  version: '64.0'
