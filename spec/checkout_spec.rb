@@ -18,6 +18,6 @@ describe "Checkout" do
 
     @browser.goto "http://saucedemo.headless.saucelabs.com/cart.html"
     @browser.link(class: 'cart_checkout_link').click
-    expect(@browser.url).to eq 'http://saucedemo.headless.saucelabs.com/checkout-step-one.htm'
+    expect(@browser.url).to eq 'http://saucedemo.headless.saucelabs.com/checkout-step-one.html'
   end
 end
