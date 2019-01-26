@@ -31,7 +31,7 @@ describe "FullFlow" do
     @browser.button(class: 'add-to-cart-button').click
 
     @browser.goto "http://saucedemo.headless.saucelabs.com/cart.html"
-    @browser.button(class: 'cart_checkout_link').click
+    @browser.link(class: 'cart_checkout_link').click
     expect(@browser.url).to eq 'http://saucedemo.headless.saucelabs.com/checkout-step-one.html'
     
   end
