@@ -46,3 +46,39 @@ chrome71_headless3:
   platform: Linux
   browser_name: chrome
   version: '71'
+chrome69_headless4:
+  platform: Linux
+  browser_name: chrome
+  version: '69'
+chrome70_headless4:
+  platform: Linux
+  browser_name: chrome
+  version: '70'
+chrome71_headless4:
+  platform: Linux
+  browser_name: chrome
+  version: '71'
+chrome69_headless5:
+  platform: Linux
+  browser_name: chrome
+  version: '69'
+chrome70_headless5:
+  platform: Linux
+  browser_name: chrome
+  version: '70'
+chrome71_headless5:
+  platform: Linux
+  browser_name: chrome
+  version: '71'
+chrome69_headless6:
+  platform: Linux
+  browser_name: chrome
+  version: '69'
+chrome70_headless6:
+  platform: Linux
+  browser_name: chrome
+  version: '70'
+chrome71_headless6:
+  platform: Linux
+  browser_name: chrome
+  version: '71'
