@@ -1,21 +1,7 @@
 require "spec_helper"
 
-describe "FullFlow" do
-  it "acts like a user" do
-    @browser.goto "http://saucedemo.headless.saucelabs.com"
-    @browser.text_field(data_test: 'username').set 'locked_out_user'
-    @browser.text_field(data_test: 'password').set 'secret_sauce'
-    @browser.button(type: 'submit').click
-
-    expect(@browser.button(class: 'error-button')).to exist
-
-  	@browser.text_field(data_test: 'username').set 'standard_user'
-    @browser.text_field(data_test: 'password').set 'secret_sauce'
-    @browser.button(type: 'submit').click
-
-    expect(@browser.url).to eq 'http://saucedemo.headless.saucelabs.com/inventory.html'
-  end
-  it 'adds stuff to the cart' do
+describe "Checkout" do
+  it 'adds an item to the cart' do
     @browser.goto "http://saucedemo.headless.saucelabs.com/inventory.html"
     @browser.button(class: 'add-to-cart-button').click
     @browser.button(class: 'add-to-cart-button').click
