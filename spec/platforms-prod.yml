@@ -79,10 +79,22 @@ firefox64_mac1:
   browser_name: firefox
   version: '64.0'
 chrome70_mac1:
-  platform: Mac 10.11
+  platform: Mac 10.12
   browser_name: chrome
   version: '70'
 chrome71_mac1:
+  platform: Mac 10.13
+  browser_name: chrome
+  version: '71'
+firefox64_mac2:
+  platform: Mac 10.11
+  browser_name: firefox
+  version: '64.0'
+chrome70_mac2:
+  platform: Mac 10.12
+  browser_name: chrome
+  version: '70'
+chrome71_mac12:
   platform: Mac 10.13
   browser_name: chrome
   version: '71'
