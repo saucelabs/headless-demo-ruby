@@ -41,6 +41,6 @@ RSpec.configure do |config|
 
   config.after(:each) do |example|
     @browser.quit
-    puts "methods on driver: #{@browser.driver.methods}"
+    puts "name: #{@browser.opt.name}, session_id: #{@browser.driver.session_id}"
   end
 end
