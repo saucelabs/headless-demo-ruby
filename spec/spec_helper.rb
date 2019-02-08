@@ -38,11 +38,13 @@ RSpec.configure do |config|
     puts opt
 
     @browser = Watir::Browser.new opt.delete('browser_name'), opt
-    puts browser
+
+    puts @browser.methods
   end
 
   config.after(:each) do |example|
     @browser.quit
-    puts "name: #{@browser.opt['name']}, session_id: #{@browser.driver.session_id}"
+    puts example.methods
+    puts "session_id: #{@browser.driver.session_id}"
   end
 end
