@@ -35,12 +35,14 @@ RSpec.configure do |config|
            accessKey: ENV['SAUCE_KEY']}
 
     opt.merge! platform
+    puts opt
 
     @browser = Watir::Browser.new opt.delete('browser_name'), opt
+    puts browser
   end
 
   config.after(:each) do |example|
     @browser.quit
-    puts "name: #{@browser.opt.name}, session_id: #{@browser.driver.session_id}"
+    puts "name: #{@browser.opt['name']}, session_id: #{@browser.driver.session_id}"
   end
 end
