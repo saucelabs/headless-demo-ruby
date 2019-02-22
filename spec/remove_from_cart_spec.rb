@@ -12,5 +12,6 @@ describe "Cart" do
 
     @browser.goto "https://www.saucedemo.com/cart.html"
     expect(@browser.divs(class: 'inventory_item_name').size).to eq 1
+    
   end
 end
