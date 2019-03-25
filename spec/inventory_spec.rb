@@ -16,9 +16,9 @@ describe "Inventory" do
     @browser.button(class: 'add-to-cart-button').click
     @browser.button(class: 'remove-from-cart-button').click
 
-    expect(@browser.span(class: 'shopping_cart_badge').text).to eq '2'
+    expect(@browser.span(class: 'shopping_cart_badge').wait_until(&:exists?).text).to eq '2'
     @browser.goto "http://saucedemo.headless.saucelabs.com/cart.html"
-    expect(@browser.divs(class: 'inventory_item_name').size).to eq 2
+    expect(@browser.divs(class: 'inventory_item_name').wait_until(&:exists?).size).to eq 2
   end
   
 end
