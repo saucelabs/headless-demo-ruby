@@ -11,7 +11,7 @@ describe "Inventory" do
 
   it 'adds and removes' do
     @browser.goto "http://saucedemo.headless.saucelabs.com/inventory.html"
-    @browser.button(class: 'add-to-cart-button').click
+    @browser.button(class: 'add-to-cart-button').wait_until(&:exists?).click
     @browser.button(class: 'add-to-cart-button').click
     @browser.button(class: 'add-to-cart-button').click
     @browser.button(class: 'remove-from-cart-button').click
