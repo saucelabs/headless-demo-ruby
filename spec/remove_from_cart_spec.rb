@@ -1,7 +1,7 @@
 require "spec_helper"
 
 describe "Cart" do
-  before { @browser.goto 'saucedemo.headless.saucelabs.com/inventory.html'}
+  before { @browser.goto 'http://saucedemo.headless.saucelabs.com/inventory.html'}
 
   it "removes one" do
     @browser.button(class: 'add-to-cart-button').click
