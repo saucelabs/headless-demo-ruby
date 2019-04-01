@@ -10,7 +10,7 @@ pipeline {
             }
           } else {
             withCredentials([usernamePassword(credentialsId: 'sauce-headless-key', passwordVariable: 'SAUCE_KEY', usernameVariable: 'SAUCE_USERNAME')]) {
-              sh 'PROCESSES=800 SAUCE_URL=https://us-east1.headless.saucelabs.com/wd/hub SAUCE_USERNAME=sah PLATFORM_FILE=headless bundle exec rake -j25 sauce_demo'
+              sh 'PROCESSES=100 SAUCE_URL=https://us-east1.headless.saucelabs.com/wd/hub SAUCE_USERNAME=sah PLATFORM_FILE=headless bundle exec rake -j25 sauce_demo'
             }
           }
         }

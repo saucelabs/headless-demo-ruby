@@ -7,7 +7,7 @@ def platforms
 end
 
 # TODO - add in windows_8_ie once Sample App is fixed
-PLATFORMS = platforms.keys*100
+PLATFORMS = platforms.keys*33
 
 PLATFORMS.each do |platform|
   desc "Run tests in parallel within suite using #{platform}"
