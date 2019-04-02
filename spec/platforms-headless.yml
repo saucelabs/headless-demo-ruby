@@ -1,12 +1,360 @@
-chrome70_headless:
+chrome70_headless1:
   platform: Linux
   browser_name: chrome
   version: '70'
-chrome71_headless:
+chrome71_headless1:
   platform: Linux
   browser_name: chrome
   version: '71'
-chrome72_headless:
+chrome72_headless1:
+  platform: Linux
+  browser_name: chrome
+  version: '72'
+chrome70_headless2:
+  platform: Linux
+  browser_name: chrome
+  version: '70'
+chrome71_headless2:
+  platform: Linux
+  browser_name: chrome
+  version: '71'
+chrome72_headless2:
+  platform: Linux
+  browser_name: chrome
+  version: '72'
+chrome70_headless3:
+  platform: Linux
+  browser_name: chrome
+  version: '70'
+chrome71_headless3:
+  platform: Linux
+  browser_name: chrome
+  version: '71'
+chrome72_headless3:
+  platform: Linux
+  browser_name: chrome
+  version: '72'
+chrome70_headless4:
+  platform: Linux
+  browser_name: chrome
+  version: '70'
+chrome71_headless4:
+  platform: Linux
+  browser_name: chrome
+  version: '71'
+chrome72_headless4:
+  platform: Linux
+  browser_name: chrome
+  version: '72'
+chrome70_headless5:
+  platform: Linux
+  browser_name: chrome
+  version: '70'
+chrome71_headless5:
+  platform: Linux
+  browser_name: chrome
+  version: '71'
+chrome72_headless5:
+  platform: Linux
+  browser_name: chrome
+  version: '72'
+chrome70_headless6:
+  platform: Linux
+  browser_name: chrome
+  version: '70'
+chrome71_headless6:
+  platform: Linux
+  browser_name: chrome
+  version: '71'
+chrome72_headless6:
+  platform: Linux
+  browser_name: chrome
+  version: '72'
+chrome70_headless7:
+  platform: Linux
+  browser_name: chrome
+  version: '70'
+chrome71_headless7:
+  platform: Linux
+  browser_name: chrome
+  version: '71'
+chrome72_headless7:
+  platform: Linux
+  browser_name: chrome
+  version: '72'
+chrome70_headless8:
+  platform: Linux
+  browser_name: chrome
+  version: '70'
+chrome71_headless8:
+  platform: Linux
+  browser_name: chrome
+  version: '71'
+chrome72_headless8:
+  platform: Linux
+  browser_name: chrome
+  version: '72'
+chrome70_headless9:
+  platform: Linux
+  browser_name: chrome
+  version: '70'
+chrome71_headless9:
+  platform: Linux
+  browser_name: chrome
+  version: '71'
+chrome72_headless9:
+  platform: Linux
+  browser_name: chrome
+  version: '72'
+chrome70_headless10:
+  platform: Linux
+  browser_name: chrome
+  version: '70'
+chrome71_headless10:
+  platform: Linux
+  browser_name: chrome
+  version: '71'
+chrome72_headless10:
+  platform: Linux
+  browser_name: chrome
+  version: '72'
+chrome70_headless11:
+  platform: Linux
+  browser_name: chrome
+  version: '70'
+chrome71_headless11:
+  platform: Linux
+  browser_name: chrome
+  version: '71'
+chrome72_headless11:
+  platform: Linux
+  browser_name: chrome
+  version: '72'
+chrome70_headless12:
+  platform: Linux
+  browser_name: chrome
+  version: '70'
+chrome71_headless12:
+  platform: Linux
+  browser_name: chrome
+  version: '71'
+chrome72_headless12:
+  platform: Linux
+  browser_name: chrome
+  version: '72'
+chrome70_headless13:
+  platform: Linux
+  browser_name: chrome
+  version: '70'
+chrome71_headless13:
+  platform: Linux
+  browser_name: chrome
+  version: '71'
+chrome72_headless13:
+  platform: Linux
+  browser_name: chrome
+  version: '72'
+chrome70_headless14:
+  platform: Linux
+  browser_name: chrome
+  version: '70'
+chrome71_headless14:
+  platform: Linux
+  browser_name: chrome
+  version: '71'
+chrome72_headless14:
+  platform: Linux
+  browser_name: chrome
+  version: '72'
+chrome70_headless15:
+  platform: Linux
+  browser_name: chrome
+  version: '70'
+chrome71_headless15:
+  platform: Linux
+  browser_name: chrome
+  version: '71'
+chrome72_headless15:
+  platform: Linux
+  browser_name: chrome
+  version: '72'
+chrome70_headless16:
+  platform: Linux
+  browser_name: chrome
+  version: '70'
+chrome71_headless16:
+  platform: Linux
+  browser_name: chrome
+  version: '71'
+chrome72_headless16:
+  platform: Linux
+  browser_name: chrome
+  version: '72'
+chrome70_headless17:
+  platform: Linux
+  browser_name: chrome
+  version: '70'
+chrome71_headless17:
+  platform: Linux
+  browser_name: chrome
+  version: '71'
+chrome72_headless17:
+  platform: Linux
+  browser_name: chrome
+  version: '72'
+chrome70_headless18:
+  platform: Linux
+  browser_name: chrome
+  version: '70'
+chrome71_headless18:
+  platform: Linux
+  browser_name: chrome
+  version: '71'
+chrome72_headless18:
+  platform: Linux
+  browser_name: chrome
+  version: '72'
+chrome70_headless19:
+  platform: Linux
+  browser_name: chrome
+  version: '70'
+chrome71_headless19:
+  platform: Linux
+  browser_name: chrome
+  version: '71'
+chrome72_headless19:
+  platform: Linux
+  browser_name: chrome
+  version: '72'
+chrome70_headless20:
+  platform: Linux
+  browser_name: chrome
+  version: '70'
+chrome71_headless20:
+  platform: Linux
+  browser_name: chrome
+  version: '71'
+chrome72_headless20:
+  platform: Linux
+  browser_name: chrome
+  version: '72'
+chrome70_headless21:
+  platform: Linux
+  browser_name: chrome
+  version: '70'
+chrome71_headless21:
+  platform: Linux
+  browser_name: chrome
+  version: '71'
+chrome72_headless21:
+  platform: Linux
+  browser_name: chrome
+  version: '72'
+chrome70_headless22:
+  platform: Linux
+  browser_name: chrome
+  version: '70'
+chrome71_headless22:
+  platform: Linux
+  browser_name: chrome
+  version: '71'
+chrome72_headless22:
+  platform: Linux
+  browser_name: chrome
+  version: '72'
+chrome70_headless23:
+  platform: Linux
+  browser_name: chrome
+  version: '70'
+chrome71_headless23:
+  platform: Linux
+  browser_name: chrome
+  version: '71'
+chrome72_headless23:
+  platform: Linux
+  browser_name: chrome
+  version: '72'
+chrome70_headless24:
+  platform: Linux
+  browser_name: chrome
+  version: '70'
+chrome71_headless24:
+  platform: Linux
+  browser_name: chrome
+  version: '71'
+chrome72_headless24:
+  platform: Linux
+  browser_name: chrome
+  version: '72'
+chrome70_headless25:
+  platform: Linux
+  browser_name: chrome
+  version: '70'
+chrome71_headless25:
+  platform: Linux
+  browser_name: chrome
+  version: '71'
+chrome72_headless25:
+  platform: Linux
+  browser_name: chrome
+  version: '72'
+chrome70_headless26:
+  platform: Linux
+  browser_name: chrome
+  version: '70'
+chrome71_headless26:
+  platform: Linux
+  browser_name: chrome
+  version: '71'
+chrome72_headless26:
+  platform: Linux
+  browser_name: chrome
+  version: '72'
+chrome70_headless27:
+  platform: Linux
+  browser_name: chrome
+  version: '70'
+chrome71_headless27:
+  platform: Linux
+  browser_name: chrome
+  version: '71'
+chrome72_headless27:
+  platform: Linux
+  browser_name: chrome
+  version: '72'
+chrome70_headless28:
+  platform: Linux
+  browser_name: chrome
+  version: '70'
+chrome71_headless28:
+  platform: Linux
+  browser_name: chrome
+  version: '71'
+chrome72_headless28:
+  platform: Linux
+  browser_name: chrome
+  version: '72'
+chrome70_headless29:
+  platform: Linux
+  browser_name: chrome
+  version: '70'
+chrome71_headless29:
+  platform: Linux
+  browser_name: chrome
+  version: '71'
+chrome72_headless29:
+  platform: Linux
+  browser_name: chrome
+  version: '72'
+chrome70_headless30:
+  platform: Linux
+  browser_name: chrome
+  version: '70'
+chrome71_headless30:
+  platform: Linux
+  browser_name: chrome
+  version: '71'
+chrome72_headless30:
   platform: Linux
   browser_name: chrome
   version: '72'
