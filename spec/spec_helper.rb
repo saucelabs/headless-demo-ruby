@@ -40,6 +40,7 @@ RSpec.configure do |config|
   end
 
   config.after(:each) do |example|
+    sleep(10)
     @browser.quit
   end
 end
