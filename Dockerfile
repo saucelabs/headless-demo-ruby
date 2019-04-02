@@ -10,4 +10,4 @@ RUN bundle install
 
 ADD . .
 
-CMD bundle exec rake sauce_demo
+CMD bundle exec rake -j100 sauce_demo
