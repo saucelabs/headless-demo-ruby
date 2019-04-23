@@ -1,12 +1,12 @@
-chrome71_headless:
-  platform: Linux
+chrome71_windows:
+  platform: Windows
   browser_name: chrome
   version: '71'
-chrome72_headless:
-  platform: Linux
+chrome72_windows:
+  platform: Windows
   browser_name: chrome
   version: '72'
-chrome73_headless:
-  platform: Linux
+chrome73_windows:
+  platform: Windows
   browser_name: chrome
   version: '73'
