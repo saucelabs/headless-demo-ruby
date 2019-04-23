@@ -1,7 +1,3 @@
-chrome70_headless:
-  platform: Linux
-  browser_name: chrome
-  version: '70'
 chrome71_headless:
   platform: Linux
   browser_name: chrome
@@ -10,3 +6,7 @@ chrome72_headless:
   platform: Linux
   browser_name: chrome
   version: '72'
+chrome73_headless:
+  platform: Linux
+  browser_name: chrome
+  version: '73'
