@@ -9,8 +9,8 @@ pipeline {
               sh 'PROCESSES=1 SAUCE_URL=http://ondemand.saucelabs.com/wd/hub PLATFORM_FILE=prod bundle exec rake -j3 sauce_demo'
             }
           } else {
-            withCredentials([usernamePassword(credentialsId: 'sauce-headless-key', passwordVariable: 'SAUCE_KEY', usernameVariable: 'SAUCE_USERNAME')]) {
-              sh 'PROCESSES=8 SAUCE_URL=http://ondemand.us-east1.headless.saucelabs.com/wd/hub PLATFORM_FILE=headless bundle exec rake -j25 sauce_demo'
+            withCredentials([usernamePassword(credentialsId: 'sam-headless-creds', passwordVariable: 'SAUCE_KEY', usernameVariable: 'SAUCE_USERNAME')]) {
+              sh 'PROCESSES=8 SAUCE_URL=http://ondemand.us-east-1.headless.saucelabs.com/wd/hub PLATFORM_FILE=headless bundle exec rake -j25 sauce_demo'
             }
           }
         }
