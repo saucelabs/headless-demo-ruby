@@ -4,10 +4,10 @@ This code is provided on an "AS-IS” basis without warranty of any kind, either
 
 ### Running in Docker
 ```
-docker run -e PROCESSES=8 -e SAUCE_URL=https://us-east-1.saucelabs.com/wd/hub \
--e PLATFORM_FILE=headless -e SAUCE_USERNAME=<YOUR_SAUCE_USERNAME> -e SAUCE_ACCESS_KEY=<YOUR_ACCESS_KEY> \
+$ docker run -e PROCESSES=8 -e SAUCE_URL=https://us-east-1.saucelabs.com/wd/hub \
+  -e PLATFORM_FILE=headless \
+  -e SAUCE_USERNAME=<YOUR_SAUCE_USERNAME> -e SAUCE_ACCESS_KEY=<YOUR_ACCESS_KEY> \
   quay.io/saucelabs/headless_demo_ruby
-
 ```
 ### Local Environment Setup
 
