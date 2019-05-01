@@ -40,7 +40,7 @@ $ docker run -e PROCESSES=8 -e SAUCE_URL=https://us-east-1.saucelabs.com/wd/hub 
 
 * Specific Configuration (see `/spec/support/platforms.yml` file)
 	```
-	$ rake mac_sierra_chrome
+	$ rake chrome_latest
 	```
 * Demo Mode, you need a fast computer for this to work.  Tune # of processes down if your workstation/laptop isn't maxed out
 	```
