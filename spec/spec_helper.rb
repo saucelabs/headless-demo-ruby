@@ -40,6 +40,7 @@ RSpec.configure do |config|
   end
 
   config.after(:each) do |example|
+    puts "test name: #{example}, session_id: #{@browser.driver.session_id}"
     @browser.quit
   end
 end
