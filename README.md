@@ -4,8 +4,8 @@ This code is provided on an "AS-IS” basis without warranty of any kind, either
 
 ### Running in Docker
 ```
-docker run -e PROCESSES=8 -e SAUCE_URL=https://us-east1.headless.saucelabs.com/wd/hub \
--e PLATFORM_FILE=headless -e SAUCE_USERNAME=<YOUR_SAUCE_USERNAME> -e SAUCE_KEY=<YOUR_ACCESS_KEY> \
+docker run -e PROCESSES=8 -e SAUCE_URL=https://us-east-1.saucelabs.com/wd/hub \
+-e PLATFORM_FILE=headless -e SAUCE_USERNAME=<YOUR_SAUCE_USERNAME> -e SAUCE_ACCESS_KEY=<YOUR_ACCESS_KEY> \
   quay.io/saucelabs/headless_demo_ruby:integration
 
 ```
@@ -27,7 +27,7 @@ docker run -e PROCESSES=8 -e SAUCE_URL=https://us-east1.headless.saucelabs.com/w
     * In the terminal export your Sauce Labs Credentials as environmental variables:
     ```
     $ export SAUCE_USERNAME=<your Sauce Labs username>
-    $ export SAUCE_KEY=<your Sauce Labs access key>
+    $ export SAUCE_ACCESS_KEY=<your Sauce Labs access key>
     ```
 
 3. Project Dependencies
@@ -44,9 +44,9 @@ docker run -e PROCESSES=8 -e SAUCE_URL=https://us-east1.headless.saucelabs.com/w
 	```
 * Demo Mode, you need a fast computer for this to work.  Tune # of processes down if your workstation/laptop isn't maxed out
 	```
-	$ PROCESSES=8 SAUCE_URL=https://us-east1.headless.saucelabs.com/wd/hub PLATFORM_FILE=headless bundle exec rake -j25 sauce_demo
+	$ PROCESSES=8 SAUCE_URL=https://us-east-1.saucelabs.com/wd/hub PLATFORM_FILE=headless bundle exec rake -j25 sauce_demo
 	```
 
 ### Watch Your Tests Run
 
-[Sauce Labs Headless Dashboard](https://app.us-east1.headless.saucelabs.com/dashboard/builds)
+[Sauce Labs Headless Dashboard](https://app.us-east-1.saucelabs.com/dashboard/builds)

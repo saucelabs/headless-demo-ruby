@@ -1,12 +1,12 @@
-chrome71_headless:
+chrome_latest:
   platform: Linux
   browser_name: chrome
-  version: '71'
-chrome72_headless:
+  version: 'latest'
+chrome_latest1-1:
   platform: Linux
   browser_name: chrome
-  version: '72'
-chrome73_headless:
+  version: 'latest-1'
+chrome73_latest-2:
   platform: Linux
   browser_name: chrome
-  version: '73'
+  version: 'latest-2'

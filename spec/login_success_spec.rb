@@ -1,7 +1,7 @@
 require "spec_helper"
 
 describe "Authentication" do
-  before { @browser.goto 'saucedemo.headless.saucelabs.com'}
+  before { @browser.goto 'http://saucedemo.headless.saucelabs.com'}
 
   it "successful" do
   	@browser.text_field(data_test: 'username').set 'standard_user'
