@@ -42,7 +42,6 @@ RSpec.configure do |config|
   config.after(:each) do |example|
     puts "test name: #{example}, session_id: #{@browser.driver.session_id}"
     @browser.quit
-    sleep(2)
     SauceWhisk::Jobs.change_status(@browser.wd.session_id, !example.exception)
   end
 end
