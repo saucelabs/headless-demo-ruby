@@ -32,7 +32,7 @@ RSpec.configure do |config|
            build: build_name,
            url: ENV['SAUCE_URL'],
            username: ENV['SAUCE_USERNAME'],
-           accessKey: ENV['SAUCE_KEY']}
+           accessKey: ENV['SAUCE_ACCESS_KEY']}
 
     opt.merge! platform
 
