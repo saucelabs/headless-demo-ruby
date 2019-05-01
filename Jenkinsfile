@@ -4,6 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         script {
+          sh 'bundle install'
           if (env.BRANCH_NAME == 'master' || env.BRANCH_NAME == 'sauce_prod' || env.BRANCH_NAME == 'integration') {
             withCredentials([usernamePassword(credentialsId: 'sauce-prod-key', passwordVariable: 'SAUCE_ACCESS_KEY', usernameVariable: 'SAUCE_USERNAME')]) {
               sh 'PROCESSES=1 SAUCE_URL=http://ondemand.saucelabs.com/wd/hub PLATFORM_FILE=prod bundle exec rake -j3 sauce_demo'
