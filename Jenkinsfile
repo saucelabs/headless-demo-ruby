@@ -10,7 +10,7 @@ pipeline {
             }
           } else {
             withCredentials([usernamePassword(credentialsId: 'sam-headless-creds', passwordVariable: 'SAUCE_KEY', usernameVariable: 'SAUCE_USERNAME')]) {
-              sh 'PROCESSES=8 SAUCE_URL=http://ondemand.us-east-1.saucelabs.com/wd/hub PLATFORM_FILE=headless bundle exec rake -j25 sauce_demo'
+              sh 'PROCESSES=8 SAUCE_URL=http://ondemand.us-east-1.saucelabs.com/wd/hub SAUCE_DATA_CENTER=US_EAST PLATFORM_FILE=headless bundle exec rake -j25 sauce_demo'
             }
           }
         }
